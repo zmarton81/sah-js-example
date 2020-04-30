@@ -12,9 +12,9 @@ function mylittlefunction() {
         $('main').append("<p>A p is appended in the main.</p>");    
     }
     else {
-        $('button').remove('#add');
-        
-        /*console.log('we reached the maximum paragraph number');*/
+        $('button').remove('.addgray');
+      /*  $('.addgray').css('color', 'white')*/
+        console.log('we reached the maximum paragraph number');
     }
     $('p').css(`border`, `1px solid Red`);
     $('p').css('padding', '10px');   
@@ -35,9 +35,10 @@ $('#add').click(mylittlefunction);
 $('#remove').click(function() {
  
     $('p:last-child').remove();
-  
+      $('main').append('.addgray', 'add p')
    }
 )
+
 
 
 
