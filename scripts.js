@@ -39,9 +39,22 @@ $('#remove').click(function() {
    }
 )
 
+function createButton(text) {
+let node = document.createElement("button");                
+let textnode = document.createTextNode(text);         
+node.appendChild(textnode);                             
+$('#remove').before(node)
+}
 
+$('#addButton').click(function() {
+	if ( $("#add").length == 0) {
+	createButton("Add p");
+	}
+	else {
+		alert("Hey, már létezik, majd ha nem lesz, hasznalhatod :)")
+	}
+});
 
- 
 
 
 // fourth part:
