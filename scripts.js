@@ -41,7 +41,10 @@ $('#remove').click(function() {
 
 function createButton(text) {
 let node = document.createElement("button");                
-let textnode = document.createTextNode(text);         
+let textnode = document.createTextNode(text); 
+var att = document.createAttribute("id");      
+att.value = "add";        
+node.setAttribute(att); 
 node.appendChild(textnode);                             
 $('#remove').before(node)
 }
