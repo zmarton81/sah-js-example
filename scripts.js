@@ -31,14 +31,23 @@ function mylittlefunction() {
 /*mylittlefunction(); 
 mylittlefunction(); */
 
+function createButton(text) {
+    let node = document.createElement("button");                
+    let textnode = document.createTextNode(text);         
+    node.appendChild(textnode);                             
+    $('#remove').before(node)
+    }
+
 $('#add').click(mylittlefunction); 
 $('#remove').click(function() {
  
     $('p:last-child').remove();
-      $('main').append('.addgray', 'add p')
+   
+    createButton("Add p");
    }
 )
 
+ 
 
 
 
