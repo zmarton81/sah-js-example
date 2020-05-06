@@ -27,9 +27,7 @@ function mylittlefunction() {
 
 } */
 
-/*how to use a funciton */
-/*mylittlefunction(); 
-mylittlefunction(); */
+
 
 function createButton(text) {
     let node = document.createElement("button");                
@@ -39,10 +37,9 @@ function createButton(text) {
     }
 
 $('#add').click(mylittlefunction); 
+
 $('#remove').click(function() {
- 
     $('p:last-child').remove();
-   
     createButton("Add p");
    }
 )

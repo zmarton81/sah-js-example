@@ -41,14 +41,16 @@ $('#remove').click(function() {
 
 function createButton(text) {
 let node = document.createElement("button");                
-let textnode = document.createTextNode(text);         
+let textnode = document.createTextNode(text); 
+node.setAttribute('id', "add"); 
 node.appendChild(textnode);                             
 $('#remove').before(node)
 }
 
 $('#addButton').click(function() {
 	if ( $("#add").length == 0) {
-	createButton("Add p");
+		createButton("Add p");
+		$('#add').click(mylittlefunction); 
 	}
 	else {
 		alert("Hey, már létezik, majd ha nem lesz, hasznalhatod :)")

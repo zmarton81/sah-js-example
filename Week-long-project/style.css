@@ -1,0 +1,62 @@
+main {
+    /*background: content-box radial-gradient(gray, darkgray);*/
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url('/images/025.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: #363837;
+}
+
+.fullFrame, .mainFrame, .leftArrow, .rightArrow {
+    height: 60em;
+}
+
+.mainFrame, .subFrame, .mainImage {
+    width: 150em;
+}
+
+.fullFrame {
+    position: fixed;
+    display: flex;
+    top: 20em;
+    width: 160em;
+    /*border: 1px solid black;*/ /* ruler for sizing div boxes */
+}
+
+.mainFrame {
+    position: relative;
+    display: flex;
+    /*border: 1px solid orange;*/ /* ruler for sizing div boxes */
+}
+
+.subFrame {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 15em;
+    cursor: pointer;
+    /*border: 1px solid red;*/ /* ruler for sizing div boxes */
+}
+
+.leftArrow, .rightArrow {
+    position: relative;
+    width: 5em;
+    /*border: 1px solid lime; */ /* ruler for sizing div boxes */
+}
+
+.arrowButtonL, .arrowButtonR {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.mainImage {
+    height: auto;
+}
+
+.arrows {
+    font-size: 5em;
+}
